@@ -1,0 +1,60 @@
+<nav>
+    <ul>
+        <li><a href="#about">Om Oss</a></li>
+        <li><a href="#cabins">Stugor</a></li>
+        <li><a href="#gallery">Galleri</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+    </ul>
+</nav>
+
+<section id="about">
+    <h2>Om Oss</h2>
+    <p>Vi erbjuder naturnära stugor i olika årstider för dig som vill komma bort från stadens brus och hitta lugnet i skogen.</p>
+</section>
+
+<section id="cabins">
+    <h2>Stugor</h2>
+    <div class="cabins">
+        <div class="cabin">
+            <h3>Vinterstuga</h3>
+            <p>Mysig stuga perfekt för vintersäsongen, nära skidspår och med öppen spis.</p>
+        </div>
+        <div class="cabin">
+            <h3>Sommartorp</h3>
+            <p>Stuga med närhet till sjö och vandringsleder – perfekt för sommarsemestern.</p>
+        </div>
+        <div class="cabin">
+            <h3>Höstbo</h3>
+            <p>Bo mitt i färgsprakande höstskog med svampplockning runt knuten.</p>
+        </div>
+    </div>
+</section>
+
+<section id="gallery">
+    <h2>Galleri</h2>
+    <div class="gallery">
+        <img src="images/summer.jpg" alt="Sommarstuga">
+        <img src="images/winter.jpg" alt="Vinterstuga">
+        <img src="images/autumn.jpg" alt="Höststuga">
+    </div>
+</section>
+
+<section id="contact">
+    <h2>Kontakt</h2>
+    <form>
+        <label for="name">Namn:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">E-post:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="message">Meddelande:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Skicka</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2025 Skogsro Stugor. Alla rättigheter förbehållna.</p>
+</footer>
