@@ -24,7 +24,6 @@ index_html = """<!DOCTYPE html>
         <h1>Skogsro Stuga</h1>
         <p>En stuga – fyra årstider av ro</p>
     </header>
-
     <nav>
         <ul>
             <li><a href="#about">Om Oss</a></li>
@@ -33,38 +32,19 @@ index_html = """<!DOCTYPE html>
             <li><a href="#contact">Kontakt</a></li>
         </ul>
     </nav>
-
     <section id="about">
         <h2>Om Oss</h2>
         <p>Vi hyr ut vår mysiga skogsstuga året runt – ett naturnära boende där varje årstid bjuder på sin egen charm.</p>
     </section>
-
     <section id="seasons">
         <h2>Stugan genom årstiderna</h2>
         <div class="seasons">
-            <div class="season">
-                <h3>Vinter</h3>
-                <p>Snötäckta granar, sprakande brasa och längdskidor utanför dörren.</p>
-                <img src="images/winter.jpg" alt="Stugan på vintern">
-            </div>
-            <div class="season">
-                <h3>Vår</h3>
-                <p>Blommande ängar, fågelkvitter och vårsol som värmer verandan.</p>
-                <img src="images/spring.jpg" alt="Stugan på våren">
-            </div>
-            <div class="season">
-                <h3>Sommar</h3>
-                <p>Bada i sjön, grilla vid solnedgången och njut av långa ljusa kvällar.</p>
-                <img src="images/summer.jpg" alt="Stugan på sommaren">
-            </div>
-            <div class="season">
-                <h3>Höst</h3>
-                <p>Färgsprakande skogar, svampplockning och krispig höstluft.</p>
-                <img src="images/autumn.jpg" alt="Stugan på hösten">
-            </div>
+            <div class="season"><h3>Vinter</h3><p>Snötäckta granar, sprakande brasa och längdskidor utanför dörren.</p><img src="images/winter.jpg" alt="Vinter"></div>
+            <div class="season"><h3>Vår</h3><p>Blommande ängar, fågelkvitter och vårsol som värmer verandan.</p><img src="images/spring.jpg" alt="Vår"></div>
+            <div class="season"><h3>Sommar</h3><p>Bada i sjön, grilla vid solnedgången och njut av långa ljusa kvällar.</p><img src="images/summer.jpg" alt="Sommar"></div>
+            <div class="season"><h3>Höst</h3><p>Färgsprakande skogar, svampplockning och krispig höstluft.</p><img src="images/autumn.jpg" alt="Höst"></div>
         </div>
     </section>
-
     <section id="gallery">
         <h2>Galleri</h2>
         <div class="gallery">
@@ -74,23 +54,18 @@ index_html = """<!DOCTYPE html>
             <img src="images/autumn.jpg" alt="Höst">
         </div>
     </section>
-
     <section id="contact">
         <h2>Kontakt</h2>
         <form>
             <label for="name">Namn:</label>
             <input type="text" id="name" name="name" required>
-
             <label for="email">E-post:</label>
             <input type="email" id="email" name="email" required>
-
             <label for="message">Meddelande:</label>
             <textarea id="message" name="message" required></textarea>
-
             <button type="submit">Skicka</button>
         </form>
     </section>
-
     <footer>
         <p>© 2025 Skogsro Stuga. Alla rättigheter förbehållna.</p>
     </footer>
@@ -206,4 +181,4 @@ with ZipFile(f"{project_name}.zip", "w") as zipf:
             arcname = os.path.relpath(filepath, project_name)
             zipf.write(filepath, arcname)
 
-print
+print("✅ Färdig! Zip-filen 'skogsro_stuga_hemsida.zip' är skapad i samma mapp.")
